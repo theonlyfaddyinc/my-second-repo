@@ -17,16 +17,17 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    needs: external_action
-    # The type of runner that the job will run on
+    needs: devops
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.WORKFLOW_TOKEN }}
 
       - name: Command from the native action
         run: echo "From my-second-repo action"
-  external_action:
+  devops:
     uses: 'theonlyfaddyinc/devops/.github/workflows/main.yml@v0'
     with:
       sample_input: "Test"
