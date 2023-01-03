@@ -14,7 +14,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  # This workflow contains a single job called "build"
   build:
     needs: devops
     runs-on: ubuntu-latest
