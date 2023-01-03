@@ -26,6 +26,6 @@ jobs:
       - name: Command from the native action
         run: echo "From my-second-repo action"
   external_action:
-    uses: theonlyfaddyinc/.github/workflows/default_workflow.yml@v0
+    uses: 'theonlyfaddyinc/.github/workflows/default_workflow.yml@v0'
     with:
       sample_input: "Test"
