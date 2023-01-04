@@ -29,4 +29,5 @@ jobs:
     uses: 'theonlyfaddyinc/devops/.github/workflows/main.yml@main'
     with:
       sample_input: "Test"
+    secrets:
       secret_token: ${{ secrets.WORKFLOW_TOKEN }}
