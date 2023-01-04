@@ -1,0 +1,9 @@
+name: Release Pipeline [MANUAL]
+on:
+  workflow_dispatch:
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sample step
+        run: echo "Sample Step!"
