@@ -15,7 +15,7 @@ on:
 
 jobs:
   build:
-    needs: devops
+    # needs: devops
     runs-on: self-hosted
 
     steps:
